@@ -37,7 +37,8 @@
                         },
                         body: await encodeValues({
                             name: x.name,
-                            addedTokens: 500,
+                            addedTokens: 100000000000000000000000
+                            ,
                             addedXp: 300
                         }, e.secret)
                     });
@@ -50,7 +51,8 @@
                         },
                         body: await encodeValues({
                             name: x.name,
-                            addedTokens: 500,
+                            addedTokens: 1000000000000
+                            ,
                             addedXp: 300
                         }, e.secret)
                     }).then(() => alert('Added daily rewards!')).catch(() => alert('There was an error when adding rewards!'));;
@@ -90,3 +92,4 @@ function footer() {
 };
 
 footer();
+
